@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: search-typeahead
+
+server:
+  port: 8080
+
+# Service-specific knobs.
+typeahead:
+  # Hard cap on how many suggestions a single request may ask for.
+  max-limit: 10
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
