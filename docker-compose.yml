@@ -1,0 +1,17 @@
+services:
+  typeahead:
+    build: .
+    image: search-typeahead:0.1.0
+    container_name: search-typeahead
+    ports:
+      - "8080:8080"
+    environment:
+      # Override service knobs without rebuilding, e.g. the suggestion cap.
+      TYPEAHEAD_MAX-LIMIT: "10"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/actuator/health"]
+      interval: 15s
+      timeout: 3s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped

@@ -45,6 +45,24 @@ mvn clean test        # compile and run the test suite (18 tests)
 mvn spring-boot:run   # start the service on http://localhost:8080
 ```
 
+## Run with Docker
+
+No JDK/Maven needed on the host — the multi-stage `Dockerfile` builds the jar
+in a Maven image and ships only a JRE + the jar.
+
+```bash
+# Build and start (foreground); service on http://localhost:8080
+docker compose up --build
+
+# …or with plain Docker:
+docker build -t search-typeahead:0.1.0 .
+docker run --rm -p 8080:8080 search-typeahead:0.1.0
+```
+
+The container exposes `8080` and has a health check on
+`/actuator/health`. Tune the suggestion cap without rebuilding via the
+`TYPEAHEAD_MAX-LIMIT` environment variable (see `docker-compose.yml`).
+
 ## Reproduce the performance numbers
 
 ```bash
