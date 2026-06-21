@@ -1,0 +1,61 @@
+# Seed query log for the typeahead index.
+# Format: <term><TAB><frequency>
+# Frequencies are illustrative aggregate counts from a fictional search log.
+
+iphone	9500
+iphone 15	7200
+iphone 15 pro	5100
+iphone charger	2600
+iphone case	2300
+ipad	6100
+ipad air	2400
+ipad pro	3100
+ipod	900
+india	4800
+indian railways	3000
+instagram	8800
+internet speed test	1700
+samsung	7000
+samsung galaxy	4300
+samsung tv	2100
+sony headphones	1600
+sony tv	1400
+google	9900
+google maps	6400
+google translate	3800
+google drive	2900
+gmail	7600
+github	5200
+github copilot	1800
+facebook	8700
+flipkart	5600
+flights	3300
+flight status	2100
+amazon	9100
+amazon prime	4700
+amazon pay	1900
+apple	6800
+apple watch	3400
+android studio	1500
+netflix	7900
+new york weather	1200
+news	4400
+youtube	9300
+youtube music	2700
+weather	5800
+weather today	3600
+wikipedia	4900
+whatsapp web	3100
+spotify	5000
+stack overflow	2800
+spring boot	2200
+spring boot tutorial	1300
+data structures	1600
+data structures and algorithms	1100
+docker	2400
+docker compose	1500
+java	3900
+java tutorial	1700
+javascript	3500
+python	4200
+python tutorial	1900
